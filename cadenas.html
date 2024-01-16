@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadenas</title>
+    <script type="text/javascript">
+        var cadena = "Rincón de la victoria"
+        document.writeln(cadena.length);//muestra 21
+        document.writeln("<br>" + cadena.substring(10));// muestra "la victoria"
+        document.writeln("<br>" + cadena.substring(0,10));//muestra "Rincón de"
+        document.writeln("<br>" + cadena.substring(-5));//muestra la cadena original
+        document.writeln(cadena.charAt(5));//muestra "n"
+        var cadena2 = "Málaga";
+        document.writeln("<br>" + cadena.concat(" " + cadena2));//
+        document.writeln("<br>" + cadena.indexOf("Rincón"));// devuelve 0 ya que se encuentra en la cadena
+        document.writeln("<br>" + cadena.indexOf("Rincón",0));// devuelve 0 ya que se encuentra en la cadena a partir del numero puesto
+        document.writeln("<br>" + cadena.indexOf("patata"));// devuelve -1 ya que la sub cadena no se encuentra 
+        document.writeln("<br>" + cadena.replace("Rincón","Calle"));// 
+        document.writeln("<br>" + cadena.split(" "));// Devuelve un array de 4 elementos(cadenas)
+        document.writeln("<br>" + cadena.split("a"));// Devuelve un array de 4 elementos(cadenas)
+        document.writeln("<br>" + cadena.split(","));// Devuelve un array teniendo en cuenta las comas
+        document.writeln("<br>" + cadena.split(""));// Devuelve un array formado por todas las letras
+        document.writeln("<br>" + cadena.toLowerCase());// devuelve todo en minusculas
+        document.writeln("<br>" + cadena.toUpperCase());// devuelve todo en MAYUSCULAS
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
